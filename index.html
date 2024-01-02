@@ -11,149 +11,148 @@
 	<i>
 	<header class= header>
 	<font color="000000">
-	<p align="center">noi!</p>
+	<p align="center">JustKiss!</p>
 	</font>
 	</h2>
 	</i>
 	</header>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+        <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
 	</head>
 	<!-- fine titolo -->
-	
-	<link href="https://fonts.googleapis.com/css?family=Charmonman|Cinzel|Cookie|Fredoka+One|Great+Vibes|Kaushan+Script|Kodchasan|Maven+Pro|Nunito|Orbitron|Pacifico|Permanent+Marker|Poiret+One|Righteous|Satisfy|Handlee|KoHo|Cedarville+Cursive|Allerta|Berkshire+Swash|Allura|Armata|Cairo|Corben|Delius+Swash+Caps|Electrolize|Ewert|Exo|Heebo:800|Itim|Jura|Kanit|Khand|Monda|PT+Sans|Play|Rajdhani|Ropa+Sans|Ruda|Saira+Semi+Condensed|Sunflower:300|Titillium+Web|Vollkorn+SC|Poiret+One" rel="stylesheet">
-	
-	<!-- inizio body -->
-	<body bgcolor="#FFFFFF">
-		<div align="center">
-			<div onclick="prev()" class="prev"> <button>previous</button> </div>
-			<img id="slider" src="https://raw.githubusercontent.com/piedifreddi/piedifreddi.github.io/main/IMG_6401.JPG" width="500px" height="400px"/>
-			<div onclick="next()" class="nxt"> <button>next</button> </div>
-		</div>
-		
-		<style>
-			button {
-				margin-top:15px;
-				float:left;
-				height:30px;
-				background-color: gray;
-				border-radius: 10px 2px;
-			}
-			button:hover {
-				cursor: pointer;
-				color: red
-			}
-			img {
-				float:left;
-				margin-right:10px;
-				margin-left:10px;
-				vertical-align: top;
-			}
-			.prev,
-			.nxt {
-				float: left;
-				margin-top: 30px;
-			}
-			.prev:hover,
-			.nxt:hover {
-				color: red;
-				cursor: pointer;
-			}
-			</style>
-			
-			<script>
-			var images = [
-				'https://raw.githubusercontent.com/piedifreddi/piedifreddi.github.io/main/IMG_6401.JPG', 
-				'https://raw.githubusercontent.com/piedifreddi/piedifreddi.github.io/main/IMG_7355.JPG', 
-				'https://raw.githubusercontent.com/piedifreddi/piedifreddi.github.io/main/IMG_9468.JPG'
-			];
-			var num = 0;
-			function next() {
-				var slider = document.getElementById('slider');
-				num++;
-				if(num >= images.length) {
-					num = 0;
-				}
-				slider.src = images[num];
-			}
-			function prev() {
-				var slider = document.getElementById('slider');
-				num--;
-				if(num < 0) {
-					num = images.length-1;
-				}
-				slider.src = images[num];
-			}
-			</script>
-		<div class="section">
-			<p align="left">la nostra canzone<iframe height="150" width="300" src="https://www.youtube.com/embed/LnHoqHscTKE" allowfullscreen frameborder="5"></iframe></p>
-		</div>
-		<div class="copyright">
-			<p align="left">il nostro tempo insieme!</p>
-		</div>
-		
 
-		<div class="countup" id="countup1">
-			<span class="timeel days">00</span>
-			<span class="timeel timeRefDays">days</span>
-			<span class="timeel hours">00</span>
-			<span class="timeel timeRefHours">hours</span>
-			<span class="timeel minutes">00</span>
-			<span class="timeel timeRefMinutes">minutes</span>
-			<span class="timeel seconds">00</span>
-			<span class="timeel timeRefSeconds">seconds</span>
-		  </div>
+    <!-- inizio body -->
+	<body>
 
-		<script>
-		window.onload = function() {
-  countUpFromTime("Nov 29, 2019 23:00:00", 'countup1');
-};
-function countUpFromTime(countFrom, id) {
-  countFrom = new Date(countFrom).getTime();
-  var now = new Date(),
-      countFrom = new Date(countFrom),
-      timeDifference = (now - countFrom);
-    
-  var secondsInADay = 60 * 60 * 1000 * 24,
-      secondsInAHour = 60 * 60 * 1000;
-    
-  days = Math.floor(timeDifference / (secondsInADay) * 1);
-  hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
-  mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
-  secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+        <div id="container">
+            <div class="heart-like-button"></div>
+            <h1>Premi qui per un bacio!</h1>
+          </div>
 
-  var idEl = document.getElementById(id);
-  idEl.getElementsByClassName('days')[0].innerHTML = days;
-  idEl.getElementsByClassName('hours')[0].innerHTML = hours;
-  idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
-  idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
 
-  clearTimeout(countUpFromTime.interval);
-  countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
-}	
-	</script>
+        <style>
+            
+            
+            @charset "utf-8";
+            * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            }
+            html {
+            font-size: 16px;
+            }
+            body {
+            background-color: #fae5e5;
+            font-family: futura-pt, sans-serif;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            }
+            #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            padding: 30px 15px;
+            }
+            .heart-like-button {
+            position: relative;
+            width: 160px;
+            height: 130px;
+            }
+            .heart-like-button:before {
+            position: absolute;
+            top: 0;
+            left: 80px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+            width: 80px;
+            height: 125px;
+            border-radius: 40px 40px 0 0;
+            background-color: #574136;
+            content: "";
+            cursor: pointer;
+            transition: background .4s;
+            }
+            .heart-like-button:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin :100% 100%;
+            width: 80px;
+            height: 125px;
+            border-radius: 40px 40px 0 0;
+            background-color: #574136;
+            content: "";
+            cursor: pointer;
+            transition: background .4s;
+            }
+            h1 {
+            margin: 0;
+            color: #574136;
+            font-size: 3rem;
+            letter-spacing: 1px;
+            text-align: center;
+            }
+            .heart-like-button.liked::before,
+            .heart-like-button.liked::after {
+            background-color: #d65076;
+            }
+            .heart-like-button.liked {
+            animation: liked .4s ease;
+            }
+            @keyframes liked {
+            0% {
+                transform: scale(.8);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+            }
+            @media screen and (max-width: 480px) {
+            #container {
+                height: auto;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            }
 
-<style>
-	.countup {
-	  text-align: left;
-	  margin-bottom: 20px;
-	}
-	.countup .timeel {
-	  display: inline-block;
-	  padding: 10px;
-	  background: #151515;
-	  margin: 0;
-	  color: white;
-	  min-width: 2.6rem;
-	  margin-left: 13px;
-	  border-radius: 10px 0 0 10px;
-	}
-	.countup span[class*="timeRef"] {
-	  border-radius: 0 10px 10px 0;
-	  margin-left: 0;
-	  background: #e8c152;
-	  color: black;
-	}
-	</style>
-	</body>
+
+        </style>
+        
+
+
+        <script>
+
+
+            const button = document.querySelector(".heart-like-button");
+
+            button.addEventListener("click", () => {
+            if (button.classList.contains("liked")) {
+                button.classList.remove("liked");
+            } else {
+                button.classList.add("liked");
+            }
+            });
+
+
+
+
+        </script>
+
+
+    </body>
 	<!-- fine body -->
 
-</html>
+</html> 
